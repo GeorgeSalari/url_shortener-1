@@ -1,0 +1,7 @@
+<h1>Hello world</h1>
+
+<% @urls.each do |url| %>
+  <p>Long url: <%= url.long_url %></p>
+  <p>Short url: <%= url.short_url %></p>
+<% end %>
+<%= link_to "Add new url", new_url_path %>

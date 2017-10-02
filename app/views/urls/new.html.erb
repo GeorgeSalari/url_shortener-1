@@ -1,0 +1,5 @@
+<%= @errors.messages[:long_url][0] if !@errors.nil? %>
+
+<%= form_for @url do |form| %>
+  <%= render partial: 'urls/form', object: form %>
+<% end %>
